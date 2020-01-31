@@ -1,16 +1,30 @@
 footer {
-
+    background-color: $grey;
+    font-family: $primary-font;
     color:$white-family;
-    background-color: #4F4F4F;
+    
 }
 
 footer p {
-
-    width:40%;
+    width:60%;
     margin: 0 auto;
     padding:20px 0;
-    text-align: center;
-    font-family: $primary-font;
-    
+    text-align: center; 
+    transition: all 0.7s;
+}
+
+footer p:hover {
+
+    color:$orange;
+    font-size: 18px;
+}
+
+@media (max-width: 768px){
+
+    footer {
+        
+        font-size: 14px;
+    }
 
 }
+

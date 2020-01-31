@@ -1,17 +1,8 @@
 @import 'setup';
 @import 'variables';
 @import 'navbar';
+@import 'buttons';
 @import 'footer';
-
-
-
-
-/* to be deleted */
-
-
-
-
-/* general design shared by all element */
 
 body {
 
@@ -30,7 +21,6 @@ img {
     margin:0 auto;
 }
 
-
 /* ----------------------------Home Page Design----------------------------------------------------------------- */
 
 /* header for home page starts here------------------------------- */
@@ -39,91 +29,47 @@ img {
 
     height: 81vh;
     position: relative;
-    
-    background-color: #F6A823;
-    
-}
-
-
-/* styling the nav */
-
-nav ul {
-
-    list-style: none;
-    margin:0;
-    padding: 0;
-    display:flex;
-    justify-content: center;
-    padding:20px 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 29px;
-    background-color: #F6A823;
-    
-}
-
-nav ul li a {
-
-    text-decoration: none;
-    padding:0 25px;
-    color:#2C2C2C;
-
-}
-
-nav ul li a:hover {
-
-    color:#F0EFED;
-}
-
-nav ul li.soph {
-
-    font-size: 42px;
+    background-color: $orange;
 }
 
 /* aligning the contect of header*/
 
 .wrapper-header-content {
+
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .header-text {
 
-    width:65%;
-    //position:relative;
-
-    
-    
+    width:65%; 
 }
-
-
-
 
 .header-home h1 {
 
-    font-family: 'Lora', serif;
+    font-family: $secondary-font;
     font-size: 140px;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 1px;
-    color:#2C2C2C;
+    color:$black;
     margin: 0;
     text-align: center;
     position: relative;
     margin-top:200px;
     width:600px;
     margin: 200px auto 0;
-   
 
 }
 
-//circle text
+.header-home h1:hover {
 
+    text-shadow: 2px 2px 4px $red;
+    transition: all 0.8s;
+}
+
+//circle text
 
 .problem-kid {
 
@@ -131,9 +77,7 @@ nav ul li.soph {
     margin-top: 20px;
     position: absolute;
     top:-70px;
-    left:-40px;
-    
-    
+    left:-40px;  
 }
 
 //styling image
@@ -143,16 +87,15 @@ nav ul li.soph {
     width:30%;
     position: relative;
     box-shadow: 15px 10px white;
-    //top:35px;
-
     right: 100px;
     bottom: -40px;
-
-
     position: absolute;
+}
 
+.image-one:hover {
 
-    
+    box-shadow: 20px 20px 10px white;
+    transition: all 0.7s;
 }
 
 /* section one (homepage)starts here-------------------------- */
@@ -160,48 +103,28 @@ nav ul li.soph {
 .section-one {
 
     padding:100px 0;
-    background-color: #F0EFED;
+    background-color: $white-family;
 }
 
 .section-one h2 {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 42px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top:0;
-    color:#2C2C2C;
+    color:$black;
 
 }
 
 .section-one p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 20px;
     line-height: 32px;
     padding-right: 100px;
-    color:#2C2C2C;
-
-}
-
-/* find out more button */
-
-.find-out-more {
-    
-    background-color:#05AFC1;
-    border:none;
-    width: 200px;
-    color: #2C2C2C;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding:15px 0;
-    height:auto;
-    font-size:18px;
-    line-height: 32px;
-    
+    color:$black;
 }
 
 /* section one ends here----------------------------- */
@@ -212,60 +135,49 @@ nav ul li.soph {
 
     display:flex;
     justify-content: space-between;
-
 }
-
 
 .box {
 
-    width:50%;
-    
+    width:50%; 
 }
-
 
 .box.image-two {
 
-    background-color: #A82706;
+    background-color: $red;
     position: relative;
     bottom:25px;
-
 }
 
 .box.image-three {
 
-    background-color: #F6A823;
+    background-color:$orange;
     position: relative;
     top:33px;
     left:30px;
-
 }
-
-
 
 .section-two h4 {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 32px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    color:#2C2C2C;
-    
-
+    color:$black;
 }
 
 .section-two p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 20px;
     line-height: 32px;
-    color:#2C2C2C;
+    color:$black;
 }
 
 .box-three {
 
     text-align: right;
-    // padding-right: 50px;
     
 }
 
@@ -278,8 +190,6 @@ nav ul li.soph {
 
     padding-left: 20px;
 }
-
-
 
 /* image */
 
@@ -298,25 +208,6 @@ nav ul li.soph {
     
 }
 
-
-/* read more button */
-
-.read-more {
-    
-    background-color:#05AFC1;
-    border:none;
-    width: 150px;
-    color: #2C2C2C;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding:20px 0;
-    height:auto;
-    font-size: 18px;
-    
-}
-
 /* section two ends here------------------------------- */
 
 /* section three starts here----------------------- */
@@ -324,7 +215,7 @@ nav ul li.soph {
 .section-three {
 
     padding:90px 0;
-    background-color: #F0EFED;
+    background-color: $white-family;
 }
 
 .wrapper-section-three {
@@ -335,9 +226,8 @@ nav ul li.soph {
 }
 
 .block {
-    width:50%;
 
-    
+    width:50%;  
 }
 
 .icon {
@@ -345,50 +235,42 @@ nav ul li.soph {
     display: flex;
 }
 
-
-
 .icon i {
 
-    color:#4F4F4F;
+    color:$grey;
     border-radius: 50%;
     padding:10px;
-    background-color: #F6A823;
+    background-color: $orange;
     margin-right: 20px;
     margin: 0;
 }
 
 .section-three h4 {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top:20px;
     font-size: 30px;
-    color:#2C2C2C;
-    
-
+    color:$black;
 }
 
 .detail p{
 
     padding: 0 60px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 20px;
     line-height: 32px;
-    color:#2C2C2C;
-    margin-top:0;
-    
+    color:$black;
+    margin-top:0;  
 }
 
 .icon p {
 
     width:60px;
 }
-
-
-
 /* section three ends here-------------------------- */
 
 /* secttion five starts here----------------------- */
@@ -396,7 +278,7 @@ nav ul li.soph {
 .section-five {
 
     padding:100px 0;
-    background-color: #F0EFED;
+    background-color: $white-family;
 }
 
 .wrapper-section-five {
@@ -409,18 +291,15 @@ nav ul li.soph {
 
 .section-five .image-five {
 
-    width:30%; 
-     
+    width:30%;    
 }
 
 .section-five .image-five img {
 
-    box-shadow: 15px 15px #F6A823;
+    box-shadow: 15px 15px $orange;
 }
 
-
 /* text */
-
 
 .wrapper-section-five {
 
@@ -429,30 +308,27 @@ nav ul li.soph {
 
 .section-five .text {
 
-    width:60%;
-    
+    width:60%; 
 }
 
 .section-five h2 {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 42px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 0;
-    color:#2C2C2C;
+    color:$black;
 
 }
 
 .section-five p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 20px;
     line-height: 32px;
-    color:#2C2C2C;
-
-
+    color:$black;
 }
 
 
@@ -476,36 +352,13 @@ nav ul li.soph {
 .section-six .image {
 
     width:31%;
-
-    
-
 }
 
 /* section six ends starts here ------------------------*/
 
-/* footer starts here------------------------------------- */
-
-footer {
-
-    background-color: #4F4F4F;
-    font-family: 'Roboto', sans-serif;
-    color:#F0EFED;
-}
-
-footer p {
-
-    width:60%;
-    margin: 0 auto;
-    padding:20px 0;
-    text-align: center;
-    
-
-}
-
 /* --------------blog page styling------------------------------------- */
 
 /* header styling */
-
 
 .wrapper-blog {
 
@@ -539,14 +392,14 @@ footer p {
     position: absolute;
     left:80px;
     bottom:-100px;
-    color:#2C2C2C;
+    color:$black;
 }
 
 /* main section */
 
 .main-content {
 
-    background-color: #F0EFED;
+    background-color: $white-family;
 }
 
 
@@ -555,13 +408,13 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #F0EFED;
+    background-color: $white-family;
     padding: 100px 0;
 }
 
 .wrapper-main-blog p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 20px;
     line-height: 32px;
 
@@ -600,9 +453,9 @@ footer p {
 
 .aside-post ul {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 16px;
-    color:#2C2C2C;
+    color:$black;
 
 }
 
@@ -613,25 +466,25 @@ footer p {
 
 .aside-about p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 18px;
     line-height: 32px;
-    color:#2C2C2C;
+    color:$black;
 }
 
 .aside-blog h5 {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 24px;
     font-weight: bold;
-    color:#2C2C2C;
+    color:$black;
     margin: 0;
    
 }
 
 .aside-about span {
 
-    color:#285E64;
+    color:$dark-grey;
     font-weight: bold;
 }
 
@@ -645,22 +498,22 @@ footer p {
 
 .section-blog h4 {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 20px;
     line-height: 40px;
 }
 
 .section-blog p {
 
-    color:#2C2C2C;
-    font-family: 'Roboto', sans-serif;
+    color:$black;
+    font-family: $primary-font;
     font-size: 18px;
     line-height: 32px;
 }
 
 p.date-two, p.date-three {
 
-    color:#285E64;
+    color:$dark-grey;
     margin: 0;
     font-size: 18px;
     font-weight: bold;
@@ -678,8 +531,6 @@ p.date-one span {
     font-style: italic;
 }
 
-
-
 .blog-one, .blog-two , .blog-three {
 
     padding:30px;
@@ -692,7 +543,6 @@ p.date-one span {
     display:flex;
     justify-content: space-between;
     
-
 }
 
 .blog-image-3 , .blog-image-4{
@@ -708,12 +558,12 @@ p.date-one span {
 
 .blog-one h4 {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 32px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    color:#2C2C2C;
+    color:$black;
     margin: 0;
 
 }
@@ -728,6 +578,7 @@ p.date-one span {
 }
 
 label {
+
     display: none;
 }
 
@@ -742,7 +593,7 @@ input.name, input.email {
 
 input:focus {
 
-    border:1px solid #4F4F4F;
+    border:1px solid $grey;
 }
 
 textarea {
@@ -753,39 +604,18 @@ textarea {
     border: none;
 }
 
-/* post comment button */
-
-.post-comment {
-    
-    background-color:#05AFC1;
-    border:none;
-    width: 100%;
-    color: #2C2C2C;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding:15px 0;
-    height:auto;
-    
-}
-
 /* contact page styling--------------- */
 
 .main-content-contact {
 
-    background-color: #F0EFED;
+    background-color: $white-family;
 }
-
-
 
 .header-contact {
 
     position: relative;
- 
 
 }
-
 
 .header-contact h1 {
 
@@ -798,9 +628,8 @@ textarea {
     position: absolute;
     left:80px;
     bottom:-100px;
-    color:#2C2C2C;
+    color:$black;
 }
-
 
 .header-contact-background {
 
@@ -814,7 +643,6 @@ textarea {
 .wrapper-main-contact {
 
     display: flex;
-
     max-width: 1100px;
     margin:0 auto;
     justify-content: space-between;
@@ -824,25 +652,22 @@ textarea {
 
 .contact-main-contect {
 
-    background-color: #F0EFED;
+    background-color: $white-family;
 }
 
 /* aside */
 
 .aside-contact p {
     
-    color:#2C2C2C;
+    color:$black;
 }
 
 .fab {
 
-    color:#F6A823;
+    color:$orange;
     padding:0 10px;
     font-size: 24px;
-   padding: 15px;
-
-   
-
+    padding: 15px;
 }
 
 .fab:first-child {
@@ -864,8 +689,7 @@ textarea {
     margin-top: 115px;
     height: auto;
     padding:20px;
-    
-    
+     
 }
 
 
@@ -876,19 +700,16 @@ textarea {
     margin-top: 100px;
 }
 
-
-
 .contact-info p {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 18px;
-    
-   
+
 }
 
 .contact-info p:first-child {
 
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-size: 22px;
     font-weight:bold;
 }
@@ -898,9 +719,9 @@ textarea {
     background-color:#05AFC1;
     border:none;
     width: 100%;
-    color: #2C2C2C;
+    color: $black;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: $primary-font;
     font-weight: bold;
     letter-spacing: 1px;
     padding:20px 0;
@@ -917,34 +738,33 @@ textarea {
         width:520px;
     }
 
-    
-
     //section two
 
     .box.image-two {
+
         background-color:  white;
         bottom: 0;
     }
 
     .image-two img {
-    bottom: 0;
-    left: 0;
 
+        bottom: 0;
+        left: 0;
     }
 
     .box.image-three {
+
         background-color: white;
-    
-    top: 0;
-    left: 0;
+        top: 0;
+        left: 0;
     
     }
 
     .image-three img {
+
         position: relative;
         bottom: 0;
         right: 0;
-    
     }
 
     .box-two, .box-three {
@@ -967,13 +787,6 @@ textarea {
         font-size: 17px;
         line-height: 27px;
     }
-
-    .read-more {
-        padding:14px;
-        font-size: 16px;
-    }
-
-
 
 }
 
@@ -1051,8 +864,6 @@ textarea {
         padding: 0 40px 40px;
     }
 
-
-
     .box-three {
 
         order:2;
@@ -1128,8 +939,15 @@ textarea {
     //header
 
     .image-one {
+
         right: 30px;
         box-shadow: 5px 5px white;
+    }
+
+    .image-one:hover {
+
+        box-shadow: 15px 15px 10px white;
+        transition: all 0.7s;
     }
 
     .header-home h1 {
@@ -1142,7 +960,6 @@ textarea {
         width: 120px;
         left: 60px;
     }
-
 
     //section two 
 
@@ -1202,21 +1019,11 @@ textarea {
     .section-six {
 
         padding:60px 0;
-        
     }
 
-    
     .section-six .image {
 
         width:32%;
-    }
-
-    //footer
-
-    footer {
-
-        font-size: 14px;
-       
     }
 
     .header-contact .get-in-touch h1 {
@@ -1294,13 +1101,14 @@ textarea {
 @media (max-width:550px) {
 
     .header-home h1 {
-    font-size: 50px;
-    width: 400px;
+
+        font-size: 50px;
+        width: 400px;
     }
 
     //section one 
 
-    .section-one{
+    .section-one {
 
         text-align: center;
     }
@@ -1382,7 +1190,13 @@ textarea {
 
 @media (max-width: 480px) {
 
-    
+    //header
+
+    .image-one:hover {
+
+        box-shadow: 10px 10px 10px white;
+        transition: all 0.7s;
+    }
 
     //section two
 
@@ -1401,7 +1215,6 @@ textarea {
         font-size: 33px;
     }
 
-    
 
     .section-six {
 

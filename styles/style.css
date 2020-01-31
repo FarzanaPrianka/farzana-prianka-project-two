@@ -245,44 +245,6 @@ html {
           box-sizing: inherit;
 }
 
-footer {
-  color: #F0EFED;
-  background-color: #4F4F4F;
-}
-
-footer p {
-  width: 40%;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-
-/* to be deleted */
-/* general design shared by all element */
-body {
-  overflow-x: hidden;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-.wrapper {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-/* ----------------------------Home Page Design----------------------------------------------------------------- */
-/* header for home page starts here------------------------------- */
-.header-home {
-  height: 81vh;
-  position: relative;
-  background-color: #F6A823;
-}
-
-/* styling the nav */
 nav ul {
   list-style: none;
   margin: 0;
@@ -294,7 +256,7 @@ nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -317,6 +279,161 @@ nav ul li.soph {
   font-size: 42px;
 }
 
+ul.two {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    font-size: 18px;
+  }
+  nav ul li a {
+    padding: 20px;
+    font-size: 18px;
+  }
+  nav ul li.soph a {
+    font-size: 40px;
+  }
+  ul.one li.one, ul.one li.two, ul.one li.three, ul.one li.four {
+    display: none;
+  }
+  ul.two {
+    display: initial;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0 0;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 29px;
+    background-color: #F6A823;
+  }
+  ul.two .soph {
+    display: none;
+  }
+  ul.two li a {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul li.soph a {
+    font-size: 36px;
+  }
+  ul.two {
+    font-size: 16px;
+  }
+}
+
+/* find out more button */
+.find-out-more {
+  background-color: #05AFC1;
+  border: none;
+  width: 200px;
+  color: #2C2C2C;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  height: auto;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/* read more button ------------------------*/
+.read-more {
+  background-color: #05AFC1;
+  border: none;
+  width: 150px;
+  color: #2C2C2C;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  height: auto;
+  font-size: 18px;
+}
+
+@media (max-width) {
+  .read-more {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+/* post comment button */
+.post-comment {
+  background-color: #05AFC1;
+  border: none;
+  width: 100%;
+  color: #2C2C2C;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  height: auto;
+}
+
+footer {
+  background-color: #4F4F4F;
+  font-family: "Roboto", sans-serif;
+  color: #F0EFED;
+}
+
+footer p {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+footer p:hover {
+  color: #F6A823;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 14px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ----------------------------Home Page Design----------------------------------------------------------------- */
+/* header for home page starts here------------------------------- */
+.header-home {
+  height: 81vh;
+  position: relative;
+  background-color: #F6A823;
+}
+
 /* aligning the contect of header*/
 .wrapper-header-content {
   padding-top: 20px;
@@ -333,7 +450,7 @@ nav ul li.soph {
 }
 
 .header-home h1 {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 140px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -345,6 +462,12 @@ nav ul li.soph {
   margin-top: 200px;
   width: 600px;
   margin: 200px auto 0;
+}
+
+.header-home h1:hover {
+  text-shadow: 2px 2px 4px #A82706;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .problem-kid {
@@ -365,6 +488,13 @@ nav ul li.soph {
   position: absolute;
 }
 
+.image-one:hover {
+  -webkit-box-shadow: 20px 20px 10px white;
+          box-shadow: 20px 20px 10px white;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
 /* section one (homepage)starts here-------------------------- */
 .section-one {
   padding: 100px 0;
@@ -372,7 +502,7 @@ nav ul li.soph {
 }
 
 .section-one h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 42px;
   text-transform: uppercase;
   font-weight: bold;
@@ -382,27 +512,11 @@ nav ul li.soph {
 }
 
 .section-one p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 32px;
   padding-right: 100px;
   color: #2C2C2C;
-}
-
-/* find out more button */
-.find-out-more {
-  background-color: #05AFC1;
-  border: none;
-  width: 200px;
-  color: #2C2C2C;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 15px 0;
-  height: auto;
-  font-size: 18px;
-  line-height: 32px;
 }
 
 /* section one ends here----------------------------- */
@@ -434,7 +548,7 @@ nav ul li.soph {
 }
 
 .section-two h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: bold;
@@ -443,7 +557,7 @@ nav ul li.soph {
 }
 
 .section-two p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 32px;
   color: #2C2C2C;
@@ -472,21 +586,6 @@ nav ul li.soph {
   position: relative;
   bottom: 25px;
   right: 30px;
-}
-
-/* read more button */
-.read-more {
-  background-color: #05AFC1;
-  border: none;
-  width: 150px;
-  color: #2C2C2C;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 20px 0;
-  height: auto;
-  font-size: 18px;
 }
 
 /* section two ends here------------------------------- */
@@ -527,7 +626,7 @@ nav ul li.soph {
 }
 
 .section-three h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
@@ -539,7 +638,7 @@ nav ul li.soph {
 
 .detail p {
   padding: 0 60px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 32px;
   color: #2C2C2C;
@@ -588,7 +687,7 @@ nav ul li.soph {
 }
 
 .section-five h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 42px;
   text-transform: uppercase;
   font-weight: bold;
@@ -598,7 +697,7 @@ nav ul li.soph {
 }
 
 .section-five p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 32px;
   color: #2C2C2C;
@@ -625,20 +724,6 @@ nav ul li.soph {
 }
 
 /* section six ends starts here ------------------------*/
-/* footer starts here------------------------------------- */
-footer {
-  background-color: #4F4F4F;
-  font-family: 'Roboto', sans-serif;
-  color: #F0EFED;
-}
-
-footer p {
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-}
-
 /* --------------blog page styling------------------------------------- */
 /* header styling */
 .wrapper-blog {
@@ -691,7 +776,7 @@ footer p {
 }
 
 .wrapper-main-blog p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 32px;
 }
@@ -728,7 +813,7 @@ footer p {
 }
 
 .aside-post ul {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #2C2C2C;
 }
@@ -738,14 +823,14 @@ footer p {
 }
 
 .aside-about p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 32px;
   color: #2C2C2C;
 }
 
 .aside-blog h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #2C2C2C;
@@ -763,14 +848,14 @@ footer p {
 }
 
 .section-blog h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 40px;
 }
 
 .section-blog p {
   color: #2C2C2C;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 32px;
 }
@@ -816,7 +901,7 @@ p.date-one span {
 }
 
 .blog-one h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: bold;
@@ -856,20 +941,6 @@ textarea {
   padding: 18px;
   margin-bottom: 15px;
   border: none;
-}
-
-/* post comment button */
-.post-comment {
-  background-color: #05AFC1;
-  border: none;
-  width: 100%;
-  color: #2C2C2C;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 15px 0;
-  height: auto;
 }
 
 /* contact page styling--------------- */
@@ -960,12 +1031,12 @@ textarea {
 }
 
 .contact-info p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
 
 .contact-info p:first-child {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: bold;
 }
@@ -976,7 +1047,7 @@ textarea {
   width: 100%;
   color: #2C2C2C;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 20px 0;
@@ -1020,10 +1091,6 @@ textarea {
   .section-two p {
     font-size: 17px;
     line-height: 27px;
-  }
-  .read-more {
-    padding: 14px;
-    font-size: 16px;
   }
 }
 
@@ -1118,6 +1185,12 @@ textarea {
     -webkit-box-shadow: 5px 5px white;
             box-shadow: 5px 5px white;
   }
+  .image-one:hover {
+    -webkit-box-shadow: 15px 15px 10px white;
+            box-shadow: 15px 15px 10px white;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
   .header-home h1 {
     font-size: 60px;
     width: 440px;
@@ -1166,9 +1239,6 @@ textarea {
   }
   .section-six .image {
     width: 32%;
-  }
-  footer {
-    font-size: 14px;
   }
   .header-contact .get-in-touch h1 {
     font-size: 60px;

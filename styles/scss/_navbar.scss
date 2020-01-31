@@ -1,0 +1,109 @@
+nav ul {
+
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    padding:20px 0;
+    font-family: $primary-font;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 29px;
+    background-color:$orange;
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    padding:0 25px;
+    color: $black;
+}
+
+nav ul li a:hover {
+
+    color:$white-family;
+}
+
+nav ul li.soph {
+
+    font-size: 42px;
+}
+
+ul.two {
+
+    display: none;
+}
+
+//responsive design
+
+@media (max-width: 768px) {
+
+    nav ul {
+        
+        font-size: 18px;
+    
+    }
+
+    nav ul li a {
+
+        padding:20px;
+        font-size: 18px;
+    }
+
+    nav ul li.soph a {
+
+        font-size: 40px;
+    }
+
+    ul.one li.one, ul.one li.two, ul.one li.three, ul.one li.four {
+
+        display: none;
+    }
+
+    ul.two {
+
+        display: initial;
+        list-style: none;
+        margin:0;
+        padding: 0;
+        display:flex;
+        justify-content: center;
+        padding:10px 0 0;
+        font-family: $primary-font;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 29px;
+        background-color: $orange;
+    }
+
+    ul.two .soph {
+
+        display: none;
+    }
+
+    ul.two li a {
+
+        padding: 0 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px){
+
+    nav ul li.soph a {
+
+        font-size: 36px;
+    }
+
+    ul.two {
+
+        font-size: 16px;
+    }
+}
+
+
+    
