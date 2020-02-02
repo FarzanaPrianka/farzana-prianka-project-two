@@ -65,7 +65,7 @@ img {
 
 .header-home h1:hover {
 
-    text-shadow: 2px 2px 4px $red;
+    text-shadow: 4px 4px 4px $red;
     transition: all 0.8s;
 }
 
@@ -94,7 +94,7 @@ img {
 
 .image-one:hover {
 
-    box-shadow: 20px 20px 10px white;
+    box-shadow: 20px 20px 40px $red;
     transition: all 0.7s;
 }
 
@@ -200,12 +200,22 @@ img {
     left:55px;
 }
 
+.image-two img:hover {
+
+    filter: grayscale(60%);
+}
+
 .image-three img {
 
     position: relative;
     bottom:25px;
     right:30px;
     
+}
+
+.image-three img:hover {
+
+    filter: grayscale(30%);
 }
 
 /* section two ends here------------------------------- */
@@ -456,6 +466,20 @@ img {
     font-family: $primary-font;
     font-size: 16px;
     color:$black;
+    list-style: none;
+    line-height: 30px;
+
+}
+
+.aside-post ul li::before {
+
+    content: "\2022";
+    color: $orange;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+
 
 }
 
@@ -479,6 +503,7 @@ img {
     font-weight: bold;
     color:$black;
     margin: 0;
+    text-transform: uppercase;
    
 }
 
@@ -501,6 +526,7 @@ img {
     font-family: $primary-font;
     font-size: 20px;
     line-height: 40px;
+    
 }
 
 .section-blog p {
@@ -536,6 +562,7 @@ p.date-one span {
     padding:30px;
     margin-bottom: 20px;
     background-color: white;
+    box-shadow: 0px 6px 0px 0px $orange;
 }
 
 .blog-two , .blog-three {
@@ -599,9 +626,16 @@ input:focus {
 textarea {
 
     width:100%;
-    padding:18px;
+    padding:10px;
     margin-bottom: 15px;
     border: none;
+}
+
+textarea::placeholder {
+
+    padding:24px;
+    font-size: 18px;
+    font-style: italic;
 }
 
 /* contact page styling--------------- */

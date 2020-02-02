@@ -271,12 +271,22 @@ nav ul li a {
   color: #2C2C2C;
 }
 
+nav ul li a:visited {
+  color: #2C2C2C;
+}
+
 nav ul li a:hover {
   color: #F0EFED;
 }
 
 nav ul li.soph {
   font-size: 42px;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+nav ul li.soph:hover {
+  letter-spacing: 10px;
 }
 
 ul.two {
@@ -465,7 +475,7 @@ img {
 }
 
 .header-home h1:hover {
-  text-shadow: 2px 2px 4px #A82706;
+  text-shadow: 4px 4px 4px #A82706;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
@@ -489,8 +499,8 @@ img {
 }
 
 .image-one:hover {
-  -webkit-box-shadow: 20px 20px 10px white;
-          box-shadow: 20px 20px 10px white;
+  -webkit-box-shadow: 20px 20px 40px #A82706;
+          box-shadow: 20px 20px 40px #A82706;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
@@ -582,10 +592,20 @@ img {
   left: 55px;
 }
 
+.image-two img:hover {
+  -webkit-filter: grayscale(60%);
+          filter: grayscale(60%);
+}
+
 .image-three img {
   position: relative;
   bottom: 25px;
   right: 30px;
+}
+
+.image-three img:hover {
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
 }
 
 /* section two ends here------------------------------- */
@@ -816,6 +836,17 @@ img {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #2C2C2C;
+  list-style: none;
+  line-height: 30px;
+}
+
+.aside-post ul li::before {
+  content: "\2022";
+  color: #F6A823;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .aside-about {
@@ -835,6 +866,7 @@ img {
   font-weight: bold;
   color: #2C2C2C;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .aside-about span {
@@ -880,6 +912,8 @@ p.date-one span {
   padding: 30px;
   margin-bottom: 20px;
   background-color: white;
+  -webkit-box-shadow: 0px 6px 0px 0px #F6A823;
+          box-shadow: 0px 6px 0px 0px #F6A823;
 }
 
 .blog-two, .blog-three {
@@ -938,9 +972,33 @@ input:focus {
 
 textarea {
   width: 100%;
-  padding: 18px;
+  padding: 10px;
   margin-bottom: 15px;
   border: none;
+}
+
+textarea::-webkit-input-placeholder {
+  padding: 24px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+textarea:-ms-input-placeholder {
+  padding: 24px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+textarea::-ms-input-placeholder {
+  padding: 24px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+textarea::placeholder {
+  padding: 24px;
+  font-size: 18px;
+  font-style: italic;
 }
 
 /* contact page styling--------------- */
@@ -1352,6 +1410,12 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .image-one:hover {
+    -webkit-box-shadow: 10px 10px 10px white;
+            box-shadow: 10px 10px 10px white;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
   .section-two h4 {
     font-size: 26px;
   }

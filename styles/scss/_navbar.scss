@@ -13,6 +13,7 @@ nav ul {
     letter-spacing: 1px;
     line-height: 29px;
     background-color:$orange;
+    
 }
 
 nav ul li a {
@@ -20,16 +21,30 @@ nav ul li a {
     text-decoration: none;
     padding:0 25px;
     color: $black;
+    
+}
+
+nav ul li a:visited {
+
+    color:$black;
 }
 
 nav ul li a:hover {
 
     color:$white-family;
+
 }
+
 
 nav ul li.soph {
 
     font-size: 42px;
+    transition: all 0.7s;
+}
+
+nav ul li.soph:hover {
+
+    letter-spacing: 10px;
 }
 
 ul.two {
